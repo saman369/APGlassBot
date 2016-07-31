@@ -1,7 +1,7 @@
 <?php
 ob_start();
 define('API_KEY','269432070:AAHL_4X7msrKXdTB9z5fMf8ePLhWDXXXqb4');
-$the_admin_id = 0;
+$the_admin_id = 212119273;
 
 file_put_contents("count",file_get_contents("count")+1);
 
@@ -697,9 +697,9 @@ https://telegram.me/joinchat/linke_dovom
 حالا باید یک لیست به شکل زیر برای ما ارسال کنید :
 
 متن دکمه اول
-https://telegram.me/joinchat/linke_aval
+https://telegram.me/joinchat/hamsarrane
 متن دکمه دوم
-https://telegram.me/joinchat/linke_dovom
+https://telegram.me/joinchat/ariyateam
 
 
 به ترتیب در هر خط جداگانه متن دکمه و لینک دکمه رو ارسال کنید :
@@ -733,11 +733,11 @@ https://telegram.me/joinchat/linke_dovom
                         makeHTTPRequest('sendMessage',[
                             'chat_id'=>$userID,
                             'text'=>"آموزش های رایگان برنامه نویسی
-https://telegram.me/mhrdev
+https://telegram.me/apteam_ir
 آموزش توسعه ربات تلگرام
-https://telegram.me/tbdchannel
+https://telegram.me/apteam_ir
 به ربات ما سر بزنید
-https://telegram.me/sscapachebot
+https://telegram.me/APGlassBotbot
                             "
                         ]);
                     }else{
@@ -782,7 +782,7 @@ https://telegram.me/sscapachebot
 اگر بد توضیح دادم روی /help کلیک کن راهنمایی مفصل داره !'
                             ]);
 
-                            $theCommand = '@sscapachebot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
+                            $theCommand = '@apglassbot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
                             makeHTTPRequest('sendMessage',[
                                 'chat_id'=>$update->message->from->id,
                                 'text'=>$theCommand,
@@ -818,7 +818,7 @@ https://telegram.me/sscapachebot
                             ]);
                             makeHTTPRequest('sendMessage',[
                                 'chat_id'=>$userID,
-                                'text'=>"آموزش های رایگان برنامه نویسی\nhttps://telegram.me/mhrdev\nآموزش توسعه ربات تلگرام\nhttps://telegram.me/tbdchannel\nبه ربات ما سر بزنید\nhttps://telegram.me/sscapachebot"
+                                'text'=>"آموزش های رایگان برنامه نویسی\nhttps://telegram.me/apteam_ir\nکانال جامع همسرانه\nhttps://telegram.me/hamsarrane\nبه ربات ما سر بزنید\nhttps://telegram.me/apglassbot"
                             ]);
                         }
 
@@ -885,10 +885,10 @@ https://telegram.me/sscapachebot
 
                 case '3':{
                     $text = $update->message->text;
-                    if(mb_strlen($text) > 100){
+                    if(mb_strlen($text) > 200){
                         makeHTTPRequest('sendMessage',[
                             'chat_id'=>$userID,
-                            'text'=>'❗️ متنت خیلی زیاده !‌ باید کمتر از 100 کاراکتر باشه 😊'.$cancel_Text
+                            'text'=>'❗️ متنت ی زیاده !‌ باید کمتر از 200 کاراکتر باشه 😊'.$cancel_Text
                         ]);
                     }elseif(mb_strlen(trim($text)) == 0){
                         makeHTTPRequest('sendMessage',[
@@ -990,7 +990,7 @@ https://telegram.me/sscapachebot
 اگر بد توضیح دادم روی /help کلیک کن راهنمایی مفصل داره !'
                     ]);
 
-                    $theCommand = '@sscapachebot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
+                    $theCommand = '@apglassbot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
                     makeHTTPRequest('sendMessage',[
                         'chat_id'=>$update->message->from->id,
                         'text'=>$theCommand,
@@ -1241,7 +1241,7 @@ https://telegram.me/sscapachebot
 //                        updateDB(getCurrentMakeID($userID), $DB);
 //                        setUserStep($userID, '5');
 //                        makeHTTPRequest('sendMessage', [
-//                            'text' => "🌐   شناسه کانال را بدهید \nشناسه ها مانند @mhrdev می باشند\n\nاگر کانال شناسه ندارد کامند /skipstep را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
+//                            'text' => "🌐   شناسه کانال را بدهید \nشناسه ها مانند @apteam_ir می باشند\n\nاگر کانال شناسه ندارد کامند /skipstep را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
 //                            'chat_id' => $userID
 //                        ]);
 //                    }else{
@@ -1254,7 +1254,7 @@ https://telegram.me/sscapachebot
 //
 //                case '5':{
 //                    $DB = getMakeDB(getCurrentMakeID($userID));
-//                    $DB->f->chid = "@mhrdev";
+//                    $DB->f->chid = "@apteam_ir";
 //                    $DB->done = true;
 //                    updateDB(getCurrentMakeID($userID),$DB);
 //                    setUserStep($userID,'1');
@@ -1344,7 +1344,7 @@ https://telegram.me/sscapachebot
                         updateDB(getCurrentMakeID($userID),$DB);
                         setUserStep($userID,'10');
                         makeHTTPRequest('sendMessage',[
-                            'text'=>"شناسه کانال را بدهید. مانند @mhrdev\n\nاگر کانال شناسه ندارد کامند /skipstep  را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
+                            'text'=>"شناسه کانال را بدهید. مانند @apteam_ir\n\nاگر کانال شناسه ندارد کامند /skipstep  را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
                             'chat_id'=>$userID
                         ]);
                     }else{
@@ -1358,7 +1358,7 @@ https://telegram.me/sscapachebot
 
                 case '10':{
                     $DB = getMakeDB(getCurrentMakeID($userID));
-                    $DB->s->chid = "@mhrdev";
+                    $DB->s->chid = "@apteam_ir";
                     $DB->done = true;
                     updateDB(getCurrentMakeID($userID),$DB);
                     setUserStep($userID,'1');
@@ -1378,10 +1378,10 @@ https://telegram.me/sscapachebot
 
         default:{
             $links = [
-                'tbd'=>'https://telegram.me/joinchat/BdES-z-VdLwCVkbsFxggvg',
-                'tbd_c'=>'https://telegram.me/joinchat/BdES-z-8OoIwyyLePo-_aw',
-                'mhrdev'=>'https://telegram.me/joinchat/BdES-zwBMnQM1W88YwjSpg',
-                'mhrdev_c'=>'https://telegram.me/joinchat/BdES-zwJKKGeFT8434LVsQ'
+                'hms2'=>'https://telegram.me/joinchat/DnfR1D6yk_MV8bWGz_FBiw',
+                'hms_c'=>'https://telegram.me/joinchat/CWR7-j41Ex9nw26RjrQUrA',
+                'ariyat'=>'https://telegram.me/ariyateam',
+                'apteam_c'=>'https://telegram.me/joinchat/DKSu6T16bieqJtQ5_UvNcA'
             ];
             var_dump(makeHTTPRequest('sendMessage',[
                 'chat_id'=>$userID,
@@ -1412,7 +1412,7 @@ https://telegram.me/sscapachebot
 /novia
 
 آموزش ویدیویی:
-https://telegram.me/mhrdev/834
+https://telegram.me/apteam
 .",
                 'parse_mode'=>'HTML',
                 'reply_markup'=>json_encode([
@@ -1420,10 +1420,10 @@ https://telegram.me/mhrdev/834
                         [['text'=>$ad_btn,'url'=>$ad_url]], 
                       [['text'=>'به رایگان در تلگـ ـلیست کانال خود را ثبت کنید','url'=>'http://teleglist.com/?bot']],
 
-                        [['text'=>'کانال اطلاع رسانی ربات','url'=>$links['mhrdev_c']]],
+                        [['text'=>'کانال اطلاع رسانی ربات','url'=>$links['apteam_c']]],
 
-                        [['text'=>'تماس با توسعه دهنده','url'=>'https://telegram.me/pp2007ws']],
-                        [['text'=>'ربات نظر سنجی در کانال','url'=>'https://telegram.me/chvotebot']]
+                        [['text'=>'تماس با توسعه دهنده','url'=>'https://telegram.me/AriyaUP_A],
+                        [['text'=>'ربات نظر سنجی در کانال','url'=>'https://telegram.me/votebot']]
                     ]
                 ])
             ]));
