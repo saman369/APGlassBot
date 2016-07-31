@@ -1,5 +1,7 @@
-# sscapachebot-telegram-bot
+# APGlassBot   -  @APTeam_ir
 
-required php modules :
+مورد نیازها :
 
 php5-curl , php5-apc
+لطفا به کانال تلگرامیه ما سر بزنید
+https://telegram.me/apteam_ir
