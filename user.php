@@ -2,7 +2,7 @@
 $directory = 'users';
 $users = array_diff(scandir($directory), array('..', '.'));
 
-define('API_KEY','XXXXX');
+define('API_KEY','3f6487b86e4ccd78e101a74c1ca17108');
 
 function makeHTTPRequest($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY
@@ -34,13 +34,12 @@ $i=0;
 $j = json_decode(file_get_contents("users/$u"));
 $r =(makeHTTPRequest("sendMessage",[
 'chat_id'=>$j->id,
-'text'=>"❗️  ربات بفروش می رسد ( درصورت نبود تقاضا منحل می شود )
+'text'=>"❗️ روبات مثل این روبات ساخته میشود با هزینه کم
 
-سورس این ربات بزودی کامل در گیت هاب قرار میگیرد و این ربات به همراه شناسه و اطلاعات قبلی به فروش می رسد .
+سورس این روبات به زودی در کانال قرار میگیرد، روباتی مانند همین روبات با هزینه کم ساخته میشود .
+جهت سوالات بیشتر با @AriyaUp_A تماس بگیرید.
 
-جهت سوالات بیشتر با @ssc_support تماس بگیرید.
-
-https://telegram.me/joinchat/BdES-zwJKKGeFT8434LVsQ",
+https://telegram.me/joinchat/DKSu6T16bieqJtQ5_UvNcA",
 'parse_mode'=>'HTML'
 ]));
 
