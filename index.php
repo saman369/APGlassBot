@@ -5,13 +5,12 @@ $the_admin_id = 212119273;
 
 file_put_contents("count",file_get_contents("count")+1);
 
-$ad_btn='آموزش های رایگان برنامه نویسی';
+$ad_btn='آموزش های رایگان طراحی سایت';
 $ad_url='http://telegram.me/apteam_ir';
-$ad_text = "1⃣ در تلگـ ـلیست، کانال خودتون رو به رایگان در مرجع کانالهای تلگرام فارسی قرار بدید، به رايگان تبليغ و عضوگيرى كنيد.
-<a href='http://www.teleglist.com/?bot'>به رایگان در تلگـ ـلیست کانال خود را ثبت کنید</a>
+$ad_text = "1⃣ در کانال همسرانه، به رایگان راه بهتر زندگی کردن با همسر خود را بیابید آوزشهای تصویری و بدون سانسور.
+<a href='https://telegram.me/joinchat/CWR7-j41Ex9nw26RjrQUrA'>به اگر خوشتان آمد بمانید و معرفی کنید.</a>
 ➖➖➖➖➖➖
-ارایه انواع آموزش برنامه نویسی و طراحی وب...برای کسب اطالاعات بیشتر در کانال سایت عضو بشید.";
-
+ارایه انواع آموزش طراحی سایت رایگان و برنامه نویسی...برای کسب اطالاعات بیشتر در کانال سایت عضو بشید.";
 function getUserLocation($uid,$default){
     $cached = apc_fetch('location-'.$uid);
     return $cached?$cached:$default;
@@ -204,7 +203,7 @@ echo 'QUERY ...';
                         'id'=>base64_encode(rand(5,555)),
                         'title'=>'برای ارسال کد کلیک کنید',
                         'input_message_content'=>[
-                            'message_text'=>'@sscapachebot getlist-'.$theListId
+                            'message_text'=>'@apglassbot getlist-'.$theListId
                         ]
                     ]])
             ]));
