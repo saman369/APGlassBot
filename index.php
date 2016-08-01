@@ -396,10 +396,10 @@ file_put_contents('ola',ob_get_clean());
         $helpTXT = "🌐      به راهنمای ربات خوش آمدید  👍
 ➖➖➖➖➖➖➖
 
-آموزش کامل ویدیویی :
-https://telegram.me/mhrdev/834
+آموزش کامل ویدیویی بزودی :
+https://telegram.me/apteam_ir
 
-این ربات به شما این امکان را می دهد که برای کانال های خود یک بنر با عکس و دکمه شیشه ایی پیاده کنید.
+این ربات به شما این امکان را می دهد که برای کانال های خود یک بنر با عکس و دکمه شیشه ایی ایجاد کنید.
 
 🌐🌐‼️ آپدیت جدید هم پیاده شد ، می توانید لیست تبادل با دکمه شیشه ایی پیاده کنید
 توضیحات آخر آموزش
@@ -409,7 +409,7 @@ https://telegram.me/mhrdev/834
 
 پس از اتمام کار ربات به شما یک کد مانند کد زیر می دهد .👇👇
 
-<pre>@sscapachebot d6cdbea45b238632bdd6d11dcf7fe98f </pre>
+<pre>@apglassbot d6cdbea45b238632bdd6d11dcf7fe98f </pre>
 
 این کد را کپی کند و هر وقت خواستید بنر را نمایش دهید ( یا در تبادل ها به ادمین کانال دیگر بدهید ) از این کد استفاده کنید .
 
@@ -435,14 +435,14 @@ https://telegram.me/mhrdev/834
 
 
 متن دکمه اول
-https://telegram.me/joinchat/linke_aval
+https://telegram.me/joinchat/CWR7-j41Ex9nw26RjrQUrA
 متن دکمه دوم
-https://telegram.me/joinchat/linke_dovom
+https://telegram.me/joinchat/DnfR1D6yk_MV8bWGz_FBiw
 ...
 
 سپس ربات به شما کد می دهد .
 
-کد ایی که ربات به شما می دهد را مانند تصویر زیر استفاده کنید .";
+کد هایی که ربات به شما می دهد را مانند تصویر زیر استفاده کنید .";
         $imageID = 'AgADBAADQ6oxG_sS0QWIeBEDRy1gg9sVQxkABPxnx4JtVvzC6j4CAAEC';
         makeHTTPRequest('sendMessage',[
             'chat_id'=>$userID,
@@ -485,7 +485,7 @@ https://telegram.me/joinchat/linke_dovom
                         'text'=>"🌐 به بخش No Via خوش آمدید .
 ➖➖➖➖➖➖
 
-قبل از هر کاری اول باید بدانید این via sscapachebot چیست !
+قبل از هر کاری اول باید بدانید این via apglassbot چیست !
 ربات ما نیازی ندارد ادمین کانال ، گروه یا هر چیزی باشد تا بنر را ارسال کنید . ما ار طریق Inline این کار ار انحام می دهیم.
 
 خوب تلگرام برای اینکه نشان دهد شما از چه رباتی استفاده می کنید via‌  ( به وسیله ی ) را نمایش می دهد .
@@ -495,7 +495,7 @@ https://telegram.me/joinchat/linke_dovom
 این توکن را  ‌ذخیره کنید . سپس ربات را ادمین کانالتان کنید ( رباتی که خودتان ساختید )
 
 کد های اینلاین مانند :
-<code>@sscapachebot getlist-XXXXX </code>
+<code>@apglassbot getlist-XXXXX </code>
 
 👈  حالا برای من کد inline تان را بفرستید : ( فعلا فقط لیست ها قبول هستند )".$cancel_Text,
                         'parse_mode'=>"HTML",
@@ -506,8 +506,8 @@ https://telegram.me/joinchat/linke_dovom
 
                 case '2':{
                     $code = $update->message->text;
-                    if(str_replace('@sscapachebot getlist-','',$code) != $code){
-                        $code_list = trim(str_replace('@sscapachebot getlist-','',$code));
+                    if(str_replace('@apglassbot getlist-','',$code) != $code){
+                        $code_list = trim(str_replace('@apglassbot getlist-','',$code));
                         $DB = getMakeDB($code_list,false);
                         if(isset($DB->done)){
                             makeHTTPRequest('sendMessage',[
@@ -527,9 +527,9 @@ https://telegram.me/joinchat/linke_dovom
 
 توجه کنید که حتما ربات را ادمین کانالتان کرده باشید و شناسه را با @ ارسال کنید .
 
-برای مثال @mhrdev .
+برای مثال @APTeam_ir .
 
-این بخش اجباری هست .".$cancel_Text,
+این بخش اجباری است .".$cancel_Text,
                                 'parse_mode'=>'HTML'
                             ]);
                             setUserStep($userID,'3');
@@ -540,7 +540,7 @@ https://telegram.me/joinchat/linke_dovom
                             'text'=>"❗️ کد شما غیر قابل قبول است .
 
 کد شما باید به شکل زیر باشد :
-<code>@sscapachebot getlist-XXXXX </code>
+<code>@apglassbot getlist-XXXXX </code>
 
 توجه فرمایید فقط کد های List ها قبول هستند .".$cancel_Text,
                             'parse_mode'=>'HTML'
@@ -696,9 +696,9 @@ https://telegram.me/joinchat/linke_dovom
 حالا باید یک لیست به شکل زیر برای ما ارسال کنید :
 
 متن دکمه اول
-https://telegram.me/joinchat/hamsarrane
+https://telegram.me/joinchat/CWR7-j41Ex9nw26RjrQUrA
 متن دکمه دوم
-https://telegram.me/joinchat/ariyateam
+https://telegram.me/joinchat/DnfR1D6yk_MV8bWGz_FBiw
 
 
 به ترتیب در هر خط جداگانه متن دکمه و لینک دکمه رو ارسال کنید :
@@ -736,7 +736,7 @@ https://telegram.me/apteam_ir
 آموزش توسعه ربات تلگرام
 https://telegram.me/apteam_ir
 به ربات ما سر بزنید
-https://telegram.me/APGlassBotbot
+https://telegram.me/apglassBotbot
                             "
                         ]);
                     }else{
@@ -884,10 +884,10 @@ https://telegram.me/APGlassBotbot
 
                 case '3':{
                     $text = $update->message->text;
-                    if(mb_strlen($text) > 200){
+                    if(mb_strlen($text) > 100){
                         makeHTTPRequest('sendMessage',[
                             'chat_id'=>$userID,
-                            'text'=>'❗️ متنت ی زیاده !‌ باید کمتر از 200 کاراکتر باشه 😊'.$cancel_Text
+                            'text'=>'❗️ متنت زیاده !‌ باید کمتر از 100 کاراکتر باشه 😊'.$cancel_Text
                         ]);
                     }elseif(mb_strlen(trim($text)) == 0){
                         makeHTTPRequest('sendMessage',[
@@ -1018,7 +1018,7 @@ https://telegram.me/APGlassBotbot
                 case '1':{
                     makeHTTPRequest('sendMessage',[
                         'chat_id'=>$userID,
-                        'text'=>"🖼  لطفا تصویر کانالتان را وارد نمایید\nجهت انصراف ، کامند /cancel را وارد کنید"
+                        'text'=>"🖼  لطفا تصویر کانالتان را وارد نمایید\nجهت انصراف ، دستور /cancel را وارد کنید"
                     ]);
                     setCurrentMakeID($userID,makeMakeID());
                     setUserStep($userID,'2');
@@ -1030,7 +1030,7 @@ https://telegram.me/APGlassBotbot
                     $image_id = isset(end($update->message->photo)->file_id)?end($update->message->photo)->file_id:false;
                     if($image_id === false){
                         makeHTTPRequest('sendMessage',[
-                            'text'=>"لطفا فایل jpg ارسال نمایید\nفایل اشتباه است\nجهت انصراف ، کامند /cancel را وارد کنید",
+                            'text'=>"لطفا فایل jpg ارسال نمایید\nفایل اشتباه است\nجهت انصراف ، دستور /cancel را وارد کنید",
                             'chat_id'=>$userID
                         ]);
                     }else{
@@ -1067,7 +1067,7 @@ https://telegram.me/APGlassBotbot
                         updateDB(getCurrentMakeID($userID), $DB);
                         setUserStep($userID, '4');
                         makeHTTPRequest('sendMessage', [
-                            'text' => "🔀   متن دکمه اول رو وارد کن\nجهت انصراف ، کامند /cancel را وارد کنید",
+                            'text' => "🔀   متن دکمه اول رو وارد کن\nجهت انصراف ، دستور /cancel را وارد کنید",
                             'chat_id' => $userID
                         ]);
                     }
@@ -1185,7 +1185,7 @@ https://telegram.me/APGlassBotbot
 اگر بد توضیح دادم روی /help کلیک کن راهنمایی مفصل داره !'
                     ]);
 
-                    $theCommand = '@sscapachebot getbanner-'.getCurrentMakeID($update->message->from->id);
+                    $theCommand = '@apglassbot getbanner-'.getCurrentMakeID($update->message->from->id);
                     makeHTTPRequest('sendMessage',[
                         'chat_id'=>$update->message->from->id,
                         'text'=>$theCommand,
@@ -1263,7 +1263,7 @@ https://telegram.me/APGlassBotbot
 //                        'chat_id'=>$userID
 //                    ]);
 //                    makeHTTPRequest('sendMessage',[
-//                        'text'=>'@sscapachebot getbanner-'.getCurrentMakeID($userID),
+//                        'text'=>'@apglassbot getbanner-'.getCurrentMakeID($userID),
 //                        'chat_id'=>$userID
 //                    ]);
 //                }break;
@@ -1329,7 +1329,7 @@ https://telegram.me/APGlassBotbot
                         updateDB(getCurrentMakeID($userID), $DB);
                         setUserStep($userID, '9');
                         makeHTTPRequest('sendMessage', [
-                            'text' => "لینک جوین دوم را بدهید\nجهت انصراف ، کامند /cancel را وارد کنید",
+                            'text' => "لینک جوین دوم را بدهید\nجهت انصراف ، دستور /cancel را وارد کنید",
                             'chat_id' => $userID
                         ]);
                     }
@@ -1367,7 +1367,7 @@ https://telegram.me/APGlassBotbot
                         'chat_id'=>$userID
                     ]);
                     makeHTTPRequest('sendMessage',[
-                        'text'=>'@sscapachebot getbanner-'.getCurrentMakeID($userID),
+                        'text'=>'@apglassbot getbanner-'.getCurrentMakeID($userID),
                         'chat_id'=>$userID
                     ]);
                 }break;
@@ -1417,12 +1417,12 @@ https://telegram.me/apteam
                 'reply_markup'=>json_encode([
                     'inline_keyboard'=>[
                         [['text'=>$ad_btn,'url'=>$ad_url]], 
-                      [['text'=>'به رایگان در تلگـ ـلیست کانال خود را ثبت کنید','url'=>'http://teleglist.com/?bot']],
+                      [['text'=>'به رایگان در سایت ای پی تیم آموزش ببینید','url'=>'http://apteam.ir']],
 
                         [['text'=>'کانال اطلاع رسانی ربات','url'=>$links['apteam_c']]],
 
                         [['text'=>'تماس با توسعه دهنده','url'=>'https://telegram.me/AriyaUP_A],
-                        [['text'=>'ربات نظر سنجی در کانال','url'=>'https://telegram.me/votebot']]
+                        [['text'=>'برترین کانال همسرانه','url'=>'https://telegram.me/hamsarrane']]
                     ]
                 ])
             ]));
